@@ -1,0 +1,18 @@
+
+<div class="product-card product-quick-add" data-product-title="{{ card_product.title }}" data-variant-id="{{ card_product.first_available_variant.id }}">
+        
+    <div class="product-card__media">
+        <!-- shopify responsive image tag -->
+        {{ card_product.featured_image | image_url: width: 2048 | image_tag: sizes: '(max-width: 991px) calc((100vw - 30px) / 1.5), calc((100vw - 30px) / 4)', loading: 'lazy', class: 'product-card__image block-fullwidth' }}
+    </div>
+
+    <div class="product-card__info">
+
+        <h3 class="product-card__title title">{{ card_product.title }}</h3>
+
+        <div class="product-card__text">{{ card_product.price | money_without_trailing_zeros }}</div>
+
+    </div>
+
+
+</div>

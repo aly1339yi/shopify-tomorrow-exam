@@ -1,0 +1,98 @@
+/* =========================================================================
+    Color
+========================================================================= */
+
+$color-black: #000;
+
+$color-white: #fff;
+
+$color-grey: #808285;
+
+$color-red: #a30000;
+
+$color-primary: $color-black;
+
+
+/* =========================================================================
+    Responsive
+========================================================================= */
+
+$breakpoint-x-small: 576px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 992px;
+$breakpoint-large: 1200px;
+$breakpoint-x-large: 1400px;
+
+$breakpoint-nav-bp: $breakpoint-small;
+
+$breakpoint-range: (
+	"x-small-down" "(max-width: #{$breakpoint-x-small - 1})",
+	"x-small-up" "(min-width: #{$breakpoint-x-small})",
+	"small-down" "(max-width: #{$breakpoint-small - 1})",
+	"small-up" "(min-width: #{$breakpoint-small})",
+	"medium-down" "(max-width: #{$breakpoint-medium - 1})",
+	"medium-up" "(min-width: #{$breakpoint-medium})",
+	"large-down" "(max-width: #{$breakpoint-large - 1})",
+	"large-up" "(min-width: #{$breakpoint-large})",
+	"x-large-down" "(max-width: #{$breakpoint-x-large - 1})",
+	"x-large-up" "(min-width: #{$breakpoint-x-large})",
+	"nav-bp-down" "(max-width: #{$breakpoint-nav-bp - 1})",
+	"nav-bp-up" "(min-width: #{$breakpoint-nav-bp})",
+	"x-small-small"
+		"(min-width: #{$breakpoint-x-small}) and (max-width: #{$breakpoint-small - 1})",
+	"small-medium"
+		"(min-width: #{$breakpoint-small}) and (max-width: #{$breakpoint-medium - 1})",
+	"medium-large"
+		"(min-width: #{$breakpoint-medium}) and (max-width: #{$breakpoint-large - 1})",
+	"large-x-large"
+		"(min-width: #{$breakpoint-large}) and (max-width: #{$breakpoint-x-large - 1})"
+		null
+);
+
+
+/* =========================================================================
+    Z-Index
+========================================================================= */
+
+$z-index: (
+	"dropdown" 400,
+	"navbar" 600,
+	"fullscreen-overlay" 800,
+	"mini-waitlist" 900,
+	"mini-cart" 1000,
+	"widget" 1200,
+	null
+);
+
+
+/* =========================================================================
+	Viewport units on mobile
+========================================================================= */
+
+$mobile-vh: var(--vh, 1vh);
+
+$mobile-100vh: #{"#{$mobile-vh} * 100"};
+
+/* =========================================================================
+    Other
+========================================================================= */
+
+$nav-width-desktop: 200px;
+
+$banner-height-desktop: 40px;
+
+$logo-height-desktop: 50px;
+
+$nav-height-desktop: 45px;
+
+$banner-height-mobile: 25px;
+
+$logo-height-mobile: 55px;
+
+$header-full-height-desktop: $banner-height-desktop + $logo-height-desktop + $nav-height-desktop;
+
+$header-full-height-mobile: $banner-height-mobile + $logo-height-mobile;
+
+$header-thin-height-desktop: $logo-height-desktop + $nav-height-desktop;
+
+$header-thin-height-mobile: $logo-height-mobile;

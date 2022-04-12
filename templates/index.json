@@ -1,0 +1,117 @@
+{
+  "sections": {
+    "16497121950f5080cd": {
+      "type": "hero",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/img.jpg"
+      }
+    },
+    "1649484344f5285326": {
+      "type": "editorial-stripe",
+      "blocks": {
+        "500acaef-3185-48a0-8bbf-28e1a754ed8e": {
+          "type": "block",
+          "settings": {
+            "bkg_color": "#00966e",
+            "color": "#000000",
+            "image": "shopify:\/\/shop_images\/Rectangle_289-1.jpg",
+            "title": "Make a scene.",
+            "text": "Everything you need for a great party, from decor to drinks and games.",
+            "link_label": "Find your scene",
+            "link_url": "shopify:\/\/collections\/featured-collection"
+          }
+        },
+        "8ea661e7-3967-4619-8012-d969c2c83a38": {
+          "type": "block",
+          "settings": {
+            "bkg_color": "#85abbd",
+            "color": "#000000",
+            "image": "shopify:\/\/shop_images\/Rectangle_289.jpg",
+            "title": "Make it extra.",
+            "text": "Once you’ve chosen a scene, you can dial it up with fun a la carte add-ons.",
+            "link_label": "Shop party supplies",
+            "link_url": "shopify:\/\/collections\/featured-collection"
+          }
+        },
+        "20af8b89-e395-4596-a073-cf684cd643da": {
+          "type": "block",
+          "settings": {
+            "bkg_color": "#e3ff21",
+            "color": "#000000",
+            "image": "shopify:\/\/shop_images\/Rectangle_2891.jpg",
+            "title": "Make it joyful.",
+            "text": "Create the arrangement of your dreams with DIY kits from Wild & Flowers.",
+            "link_label": "Shop florals",
+            "link_url": "shopify:\/\/collections\/featured-collection"
+          }
+        },
+        "2e847383-7f92-4427-b344-179332083191": {
+          "type": "block",
+          "settings": {
+            "bkg_color": "#bf91c4",
+            "color": "#000000",
+            "image": "shopify:\/\/shop_images\/Rectangle_2892.jpg",
+            "title": "Make it happen.",
+            "text": "Need a bartender, caterer, or DJ? Just add to the cart. It’s that easy.",
+            "link_label": "Browse vendors",
+            "link_url": "shopify:\/\/collections\/featured-collection"
+          }
+        }
+      },
+      "block_order": [
+        "500acaef-3185-48a0-8bbf-28e1a754ed8e",
+        "8ea661e7-3967-4619-8012-d969c2c83a38",
+        "20af8b89-e395-4596-a073-cf684cd643da",
+        "2e847383-7f92-4427-b344-179332083191"
+      ],
+      "settings": {
+        "title": "Having Fun 101"
+      }
+    },
+    "1649488245092c388b": {
+      "type": "editorial-grid",
+      "blocks": {
+        "35e4bd48-6f3b-4596-b060-227d856b5e7b": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_324_bc9bd30c-1fbe-4c98-82f4-fa0baa857289.jpg",
+            "title": "Housewarming Gifts for the Host",
+            "color": "#ffffff",
+            "link_label": "Discover them all",
+            "link_url": "shopify:\/\/collections\/featured-collection"
+          }
+        },
+        "14c087a2-315a-4fee-84bd-7ab3bb0a42e9": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_324.jpg",
+            "title": "The Limited-Edition Holiday Scene",
+            "color": "#ffffff",
+            "link_label": "Shop the scene",
+            "link_url": "shopify:\/\/collections\/featured-collection"
+          }
+        }
+      },
+      "block_order": [
+        "35e4bd48-6f3b-4596-b060-227d856b5e7b",
+        "14c087a2-315a-4fee-84bd-7ab3bb0a42e9"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "164965529239a190de": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Party a La Carte",
+        "collection": "featured-collection"
+      }
+    }
+  },
+  "order": [
+    "16497121950f5080cd",
+    "1649484344f5285326",
+    "1649488245092c388b",
+    "164965529239a190de"
+  ]
+}

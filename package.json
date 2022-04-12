@@ -1,0 +1,29 @@
+{
+  "name": "shopify-nili-lotan",
+  "version": "1.0.0",
+  "description": "Shopify theme of Nili Lotan",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackandblackcreative/shopify-nili-lotan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blackandblackcreative/shopify-nili-lotan/issues"
+  },
+  "homepage": "https://github.com/blackandblackcreative/shopify-nili-lotan#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-js-import": "^1.0.6",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.49.0"
+  }
+}

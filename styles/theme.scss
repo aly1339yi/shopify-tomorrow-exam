@@ -1,0 +1,26 @@
+@use "sass:math";
+
+@import 'settings/variables.scss';
+@import 'settings/fonts.scss';
+
+@import 'tools/mixins.scss';
+@import 'tools/helper_classes.scss';
+
+@import 'vendor/swiper-bundle.scss';
+
+@import '_components/vendor-override.scss';
+
+@import 'global/normalize.scss';
+@import 'global/base.scss';
+
+@import '_components/grid.scss';
+@import '_components/other.scss';
+
+@import '_components/layout.scss';
+@import '_components/banner.scss';
+@import '_components/header.scss';
+@import '_components/footer.scss';
+@import '_components/product-card.scss';
+
+@import '_templates/index.scss';
+

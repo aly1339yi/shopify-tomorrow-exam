@@ -1,0 +1,18 @@
+.banner{
+    border-bottom: 1px solid #000;
+    padding: 1.5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+
+    background-color: #85ABBD;
+
+    @include screen('nav-bp-down'){
+        display: none !important;
+    }
+}
+
+.banner__menu{
+    display: flex;
+    column-gap: 4rem;
+}

@@ -1,0 +1,162 @@
+ <div class="editorial-grid">
+
+    <div class="editorial-grid__list editorial-grid-{{section.id}}" id="editorial-grid-{{section.id}}">
+
+        {%- assign unified_image_ratio = 0 -%}
+        {% for block in section.blocks %}
+            {% if block.settings.image.aspect_ratio > unified_image_ratio %}
+                {%- assign unified_image_ratio = block.settings.image.aspect_ratio -%}
+            {% endif %}
+        {% endfor %}
+
+        {%- style -%}
+            .editorial-grid-{{section.id}} .editorial-card__media{
+                padding-bottom: {{ 1 | divided_by: unified_image_ratio | times: 100 }}%;
+            }
+        {%- endstyle -%}
+
+
+        {%- for block in section.blocks -%}
+
+        <div class="editorial-grid__item editorial-grid__item-{{section.id}}-{{ forloop.index0 }}" {{ block.shopify_attributes }}>
+
+            {%- style -%}
+                .editorial-grid__item-{{section.id}}-{{ forloop.index0 }} .editorial-card{
+                    color: {{ block.settings.color }};
+                }
+            {%- endstyle -%}
+
+            <!-- editorial card -->
+
+            <div class="editorial-card">
+                
+                <div class="editorial-card__media">
+
+                    {{ block.settings.image | image_url: width: 2048 | image_tag: sizes: '(max-width: 991px) calc((100vw - 30px) / 1.5), calc((100vw - 30px) / 4)', loading: 'lazy', class: 'editorial-card__image block-fullwidth' }}
+                </div>
+
+                <div class="editorial-card__overlay {{ block.settings.vertical_alignment }}">
+
+                    <div class="editorial-card__info">
+    
+                        {%- if block.settings.title != blank -%}
+                        <h3 class="editorial-card__title title">{{ block.settings.title }}</h3>
+                        {%- endif -%}
+    
+                        {%- if block.settings.text != blank -%}
+                        <div class="editorial-card__text">{{ block.settings.text }}</div>
+                        {%- endif -%}
+    
+                        {%- if block.settings.link_label != blank -%}
+                        <a class="editorial-card__link link" href="{{ block.settings.link_url }}">{{ block.settings.link_label }}</a>
+                        {%- endif -%}
+    
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+        {%- endfor -%}
+
+    </div>
+
+</div>
+
+
+
+{% schema %}
+
+{
+
+    "name": "Editorial Grid",
+    "tag": "section",
+    "class": "section",
+    "max_blocks": 2,
+    "settings":[
+
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        }
+
+    ],
+
+    "blocks": [
+    {
+        "type": "block",
+        "name": "Block",
+        "limit": 2,
+        "settings": [
+
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            },
+
+
+            {
+                "type": "select",
+                "id": "vertical_alignment",
+                "label": "Vertical alignment",
+                "options": [
+                  {
+                    "value": "vertical-alignment-top",
+                    "label": "Top"
+                  },
+                  {
+                    "value": "vertical-alignment-middle",
+                    "label": "Middle"
+                  },
+                  {
+                    "value": "vertical-alignment-bottom",
+                    "label": "Bottom"
+                  }
+                ],
+                "default": "vertical-alignment-bottom"
+            },
+
+            {
+                "type": "color",
+                "id": "color",
+                "default": "#ffffff",
+                "label": "Color"
+            },
+
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title"
+            },
+
+            {
+                "type": "text",
+                "id": "link_label",
+                "label": "Link Label"
+            },
+
+            {
+                "type": "url",
+                "id": "link_url",
+                "label": "Link URL"
+            }
+        ]
+    }
+  ],
+
+
+    "presets": [
+        {
+            "name": "Editorial Grid"
+        }
+    ]
+
+
+}
+
+
+{% endschema %}

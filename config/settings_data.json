@@ -1,0 +1,28 @@
+{
+  "current": {
+    "sections": {
+      "banner": {
+        "type": "banner",
+        "settings": {
+          "banner_text": "Meet Festive & Co",
+          "banner_menu": "banner-menu"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo_text": "Parties? Fun. Planning them? Not so much. We curate ready-to-go kits that make throwing a party easy. No occasion necessary.",
+          "main_menu": "main-menu"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}

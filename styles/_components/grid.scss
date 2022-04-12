@@ -1,0 +1,197 @@
+/* =========================================================================
+  Grid Columns Width Classes
+========================================================================= */
+
+/* 
+
+eg:
+
+large-up-one-third 
+
+*/
+
+@mixin grid-column-generator($breakpoint: '') {
+  /** Whole */
+  .#{$breakpoint}one-whole { width: 100%; }
+
+  /* Halves */
+  .#{$breakpoint}one-half { width: percentage(math.div(1, 2)); }
+
+  /* Thirds */
+  .#{$breakpoint}one-third { width: percentage(math.div(1, 3)); }
+  .#{$breakpoint}two-thirds { width: percentage(math.div(2, 3)); }
+
+  /* Quarters */
+  .#{$breakpoint}one-quarter { width: percentage(math.div(1, 4)); }
+  .#{$breakpoint}two-quarters { width: percentage(math.div(2, 4)); }
+  .#{$breakpoint}three-quarters { width: percentage(math.div(3, 4)); }
+
+  /* Fifths */
+  .#{$breakpoint}one-fifth { width: percentage(math.div(1, 5)); }
+  .#{$breakpoint}two-fifths { width: percentage(math.div(2, 5)); }
+  .#{$breakpoint}three-fifths { width: percentage(math.div(3, 5)); }
+  .#{$breakpoint}four-fifths { width: percentage(math.div(4, 5)); }
+
+  /* Sixths */
+  .#{$breakpoint}one-sixth { width: percentage(math.div(1, 6)); }
+  .#{$breakpoint}two-sixths { width: percentage(math.div(2, 6)); }
+  .#{$breakpoint}three-sixths { width: percentage(math.div(3, 6)); }
+  .#{$breakpoint}four-sixths { width: percentage(math.div(4, 6)); }
+  .#{$breakpoint}five-sixths { width: percentage(math.div(5, 6)); }
+
+  /* Eighths */
+  .#{$breakpoint}one-eighth { width: percentage(math.div(1, 8)); }
+  .#{$breakpoint}two-eighths { width: percentage(math.div(2, 8)); }
+  .#{$breakpoint}three-eighths { width: percentage(math.div(3, 8)); }
+  .#{$breakpoint}four-eighths { width: percentage(math.div(4, 8)); }
+  .#{$breakpoint}five-eighths { width: percentage(math.div(5, 8)); }
+  .#{$breakpoint}six-eighths { width: percentage(math.div(6, 8)); }
+  .#{$breakpoint}seven-eighths { width: percentage(math.div(7, 8)); }
+
+  /* Tenths */
+  .#{$breakpoint}one-tenth { width: percentage(math.div(1, 10)); }
+  .#{$breakpoint}two-tenths { width: percentage(math.div(2, 10)); }
+  .#{$breakpoint}three-tenths { width: percentage(math.div(3, 10)); }
+  .#{$breakpoint}four-tenths { width: percentage(math.div(4, 10)); }
+  .#{$breakpoint}five-tenths { width: percentage(math.div(5, 10)); }
+  .#{$breakpoint}six-tenths { width: percentage(math.div(6, 10)); }
+  .#{$breakpoint}seven-tenths { width: percentage(math.div(7, 10)); }
+  .#{$breakpoint}eight-tenths { width: percentage(math.div(8, 10)); }
+  .#{$breakpoint}nine-tenths { width: percentage(math.div(9, 10)); }
+
+  /* Twelfths */
+  .#{$breakpoint}one-twelfth { width: percentage(math.div(1, 12)); }
+  .#{$breakpoint}two-twelfths { width: percentage(math.div(2, 12)); }
+  .#{$breakpoint}three-twelfths { width: percentage(math.div(3, 12)); }
+  .#{$breakpoint}four-twelfths { width: percentage(math.div(4, 12)); }
+  .#{$breakpoint}five-twelfths { width: percentage(math.div(5, 12)); }
+  .#{$breakpoint}six-twelfths { width: percentage(math.div(6, 12)); }
+  .#{$breakpoint}seven-twelfths { width: percentage(math.div(7, 12)); }
+  .#{$breakpoint}eight-twelfths { width: percentage(math.div(8, 12)); }
+  .#{$breakpoint}nine-twelfths { width: percentage(math.div(9, 12)); }
+  .#{$breakpoint}ten-twelfths { width: percentage(math.div(10, 12)); }
+  .#{$breakpoint}eleven-twelfths { width: percentage(math.div(11, 12)); }
+}
+
+/* =========================================================================
+  #Grid Columns Push Classes
+========================================================================= */
+
+/* 
+
+eg:
+
+large-up-push-one-third
+
+*/
+
+@mixin grid-push-generator($breakpoint: '') {
+  /* Halves */
+  .#{$breakpoint}push-one-half { left: percentage(math.div(1, 2)); }
+
+  /* Thirds */
+  .#{$breakpoint}push-one-third { left: percentage(math.div(1, 3)); }
+  .#{$breakpoint}push-two-thirds { left: percentage(math.div(2, 3)); }
+
+  /* Quarters */
+  .#{$breakpoint}push-one-quarter { left: percentage(math.div(1, 4)); }
+  .#{$breakpoint}push-two-quarters { left: percentage(math.div(2, 4)); }
+  .#{$breakpoint}push-three-quarters { left: percentage(math.div(3, 4)); }
+
+  /* Fifths */
+  .#{$breakpoint}push-one-fifth { left: percentage(math.div(1, 5)); }
+  .#{$breakpoint}push-two-fifths { left: percentage(math.div(2, 5)); }
+  .#{$breakpoint}push-three-fifths { left: percentage(math.div(3, 5)); }
+  .#{$breakpoint}push-four-fifths { left: percentage(math.div(4, 5)); }
+
+  /* Sixths */
+  .#{$breakpoint}push-one-sixth { left: percentage(math.div(1, 6)); }
+  .#{$breakpoint}push-two-sixths { left: percentage(math.div(2, 6)); }
+  .#{$breakpoint}push-three-sixths { left: percentage(math.div(3, 6)); }
+  .#{$breakpoint}push-four-sixths { left: percentage(math.div(4, 6)); }
+  .#{$breakpoint}push-five-sixths { left: percentage(math.div(5, 6)); }
+
+  /* Eighths */
+  .#{$breakpoint}push-one-eighth { left: percentage(math.div(1, 8)); }
+  .#{$breakpoint}push-two-eighths { left: percentage(math.div(2, 8)); }
+  .#{$breakpoint}push-three-eighths { left: percentage(math.div(3, 8)); }
+  .#{$breakpoint}push-four-eighths { left: percentage(math.div(4, 8)); }
+  .#{$breakpoint}push-five-eighths { left: percentage(math.div(5, 8)); }
+  .#{$breakpoint}push-six-eighths { left: percentage(math.div(6, 8)); }
+  .#{$breakpoint}push-seven-eighths { left: percentage(math.div(7, 8)); }
+
+  /* Tenths */
+  .#{$breakpoint}push-one-tenth { left: percentage(math.div(1, 10)); }
+  .#{$breakpoint}push-two-tenths { left: percentage(math.div(2, 10)); }
+  .#{$breakpoint}push-three-tenths { left: percentage(math.div(3, 10)); }
+  .#{$breakpoint}push-four-tenths { left: percentage(math.div(4, 10)); }
+  .#{$breakpoint}push-five-tenths { left: percentage(math.div(5, 10)); }
+  .#{$breakpoint}push-six-tenths { left: percentage(math.div(6, 10)); }
+  .#{$breakpoint}push-seven-tenths { left: percentage(math.div(7, 10)); }
+  .#{$breakpoint}push-eight-tenths { left: percentage(math.div(8, 10)); }
+  .#{$breakpoint}push-nine-tenths { left: percentage(math.div(9, 10)); }
+
+  /* Twelfths */
+  .#{$breakpoint}push-one-twelfth { left: percentage(math.div(1, 12)); }
+  .#{$breakpoint}push-two-twelfths { left: percentage(math.div(2, 12)); }
+  .#{$breakpoint}push-three-twelfths { left: percentage(math.div(3, 12)); }
+  .#{$breakpoint}push-four-twelfths { left: percentage(math.div(4, 12)); }
+  .#{$breakpoint}push-five-twelfths { left: percentage(math.div(5, 12)); }
+  .#{$breakpoint}push-six-twelfths { left: percentage(math.div(6, 12)); }
+  .#{$breakpoint}push-seven-twelfths { left: percentage(math.div(7, 12)); }
+  .#{$breakpoint}push-eight-twelfths { left: percentage(math.div(8, 12)); }
+  .#{$breakpoint}push-nine-twelfths { left: percentage(math.div(9, 12)); }
+  .#{$breakpoint}push-ten-twelfths { left: percentage(math.div(10, 12)); }
+  .#{$breakpoint}push-eleven-twelfths { left: percentage(math.div(11, 12)); }
+}
+
+/* =========================================================================
+  #Grid Columns Clearfix Classes
+========================================================================= */
+
+@mixin grid-uniform-clearfix($breakpoint: '') {
+  .grid-uniform {
+    .#{$breakpoint}one-half:nth-child(2n+1),
+    .#{$breakpoint}one-third:nth-child(3n+1),
+    .#{$breakpoint}one-quarter:nth-child(4n+1),
+    .#{$breakpoint}one-fifth:nth-child(5n+1),
+    .#{$breakpoint}one-sixth:nth-child(6n+1),
+    .#{$breakpoint}two-sixths:nth-child(3n+1),
+    .#{$breakpoint}three-sixths:nth-child(2n+1),
+    .#{$breakpoint}one-eighth:nth-child(8n+1),
+    .#{$breakpoint}two-eighths:nth-child(4n+1),
+    .#{$breakpoint}four-eighths:nth-child(2n+1),
+    .#{$breakpoint}five-tenths:nth-child(2n+1),
+    .#{$breakpoint}one-twelfth:nth-child(12n+1),
+    .#{$breakpoint}two-twelfths:nth-child(6n+1),
+    .#{$breakpoint}three-twelfths:nth-child(4n+1),
+    .#{$breakpoint}four-twelfths:nth-child(3n+1),
+    .#{$breakpoint}six-twelfths:nth-child(2n+1) { clear: both; }
+  }
+}
+
+/* =========================================================================
+  #Build Base Grid Columns Width Classes
+========================================================================= */
+
+@include grid-column-generator();
+
+/* =========================================================================
+  #Build Responsive Grid Columns Width Classes
+========================================================================= */
+
+@each $item in $breakpoint-range {
+
+  $item-key: nth($item, 1);
+
+  @include screen($range: $item-key) {
+    @include grid-column-generator('#{$item-key}-');
+    @include grid-uniform-clearfix('#{$item-key}-');
+    @include grid-push-generator('#{$item-key}-');
+  }
+  
+  
+}
+
+
+

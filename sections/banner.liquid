@@ -1,0 +1,49 @@
+<div class="banner">
+
+<!-- Banner Text -->
+
+    <div class="banner_text">{{ section.settings.banner_text }}</div>
+
+<!-- Banner Menu -->
+
+    <ul class="banner__menu">
+
+        {%- for link in section.settings.banner_menu.links -%}
+
+        <li>
+            <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+
+        {%- endfor -%}
+
+    </ul>
+
+</div>
+
+
+
+
+{% schema %}
+
+{
+
+    "name": "Banner",
+    "settings":[
+
+        {
+            "type": "text",
+            "id": "banner_text",
+            "label": "Banner Text"
+        },
+
+        {
+            "type": "link_list",
+            "id": "banner_menu",
+            "label": "Banner Menu"
+        }
+
+    ]
+}
+
+
+{% endschema %}

@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="{{ request.locale.iso_code }}">
+
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="theme-color" content="">
+        <link rel="canonical" href="{{ canonical_url }}">
+        <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+
+        {% if settings.favicon != blank %}
+            <link rel="icon" href="{{ settings.favicon | img_url: '180x' }}">
+        {% endif %}
+
+        <title>
+            {{ page_title }}
+            {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+            {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
+            {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+        </title>
+
+        {% if page_description %}
+            <meta name="description" content="{{ page_description | escape }}">
+        {% endif %}
+
+        {% render 'meta-tags' %}
+
+        <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}" media="all">
+        <script src="{{ 'theme.min.js' | asset_url }}" defer></script>
+
+        {{ content_for_header }}
+
+    </head>
+
+    <body data-template="{{ template }}" {% if template.directory %}data-template-directory="{{ template.directory }}"{% endif %} data-template-name="{{ template.name }}" {% if template.suffix %}data-template-suffix="{{ template.suffix }}"{% endif %}>
+
+        <a class="skip-to-content-link button visually-hidden" href="#MainContent">Skip to main content</a>
+        
+        {% section 'banner' %}
+
+        {% section 'header' %}
+
+        <main id="MainContent" class="main" role="main">
+            {{ content_for_layout }}
+        </main>
+
+        {% section 'footer' %}
+
+    </body>
+
+</html>

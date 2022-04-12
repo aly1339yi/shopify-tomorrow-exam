@@ -1,0 +1,121 @@
+/* ========================================================================
+   Visual, Display, Box Model
+   ========================================================================= */
+
+/* 
+
+eg:
+
+large-up-display-none-imp
+
+*/
+
+@mixin display-none-imp-class($breakpoint: '') {
+    .#{$breakpoint}-display-none-imp{display:none !important;}
+}
+
+@each $item in $breakpoint-range {
+    $item-key: nth($item, 1);
+    @include screen($range: $item-key) {
+        @include display-none-imp-class('#{$item-key}');
+    }
+}
+
+@mixin display-none-class($breakpoint: '') {
+    .#{$breakpoint}-display-none{display:none;}
+}
+
+@each $item in $breakpoint-range {
+    $item-key: nth($item, 1);
+    @include screen($range: $item-key) {
+        @include display-none-class('#{$item-key}');
+    }
+}
+
+
+.block-fullwidth {
+    display: block;
+    width: 100%;
+}
+
+.block-fullheight{
+    display: block;
+    height: 100%;
+}
+
+.height-100vh {
+    height: 100vh;
+}
+
+
+.display-none-imp{
+    display: none !important;
+}
+
+.invisible{
+    @include invisible;
+}
+
+/* ========================================================================
+   Typography
+   ========================================================================= */
+
+.text-ellipsis {
+    @include text-ellipsis;
+}
+
+
+/* ========================================================================
+   Position
+   ========================================================================= */
+
+.grid-self-align-justify-end-center{
+    align-self: end;
+    justify-self: center;
+}
+.grid-self-align-justify-end-start{
+    align-self: end;
+    justify-self: start;
+}
+.grid-self-align-justify-end-end{
+    align-self: end;
+    justify-self: end;
+}
+.grid-self-align-justify-center-center{
+    align-self: center;
+    justify-self: center;
+}
+.grid-self-align-justify-center-start{
+    align-self: center;
+    justify-self: start;
+}
+.grid-self-align-justify-center-end{
+    align-self: center;
+    justify-self: end;
+}
+.grid-self-align-justify-start-center{
+    align-self: start;
+    justify-self: center;
+}
+.grid-self-align-justify-start-start{
+    align-self: start;
+    justify-self: start;
+}
+.grid-self-align-justify-start-end{
+    align-self: start;
+    justify-self: end;
+}
+
+
+/* ========================================================================
+   Misc
+   ========================================================================= */
+
+.hover-opacity{
+    @include transition(opacity 300ms);
+    @include hover-opacity;
+}
+
+.visually-hidden{
+    @include visually-hidden;
+}

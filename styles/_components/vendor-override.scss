@@ -1,0 +1,14 @@
+// swiper
+
+:root{
+    --swiper-theme-color: #000;
+}
+
+.swiper-slide{
+    height: auto;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    content: '';
+}

@@ -1,0 +1,35 @@
+
+<div class="hero">
+
+    {{ section.settings.image | image_url: width: 2048 | image_tag: loading: 'lazy', class: 'hero__image block-fullwidth' }}
+
+</div>
+
+
+
+{% schema %}
+
+{
+
+    "name": "Hero",
+    "settings":[
+
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        }
+
+
+    ],
+
+    "presets": [
+        {
+            "name": "Hero"
+        }
+    ]
+
+}
+
+
+{% endschema %}

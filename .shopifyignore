@@ -1,0 +1,7 @@
+package.json
+package-lock.json
+gulpfile.js
+
+node_modules/
+styles/
+scripts/

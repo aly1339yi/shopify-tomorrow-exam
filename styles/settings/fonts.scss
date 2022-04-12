@@ -1,0 +1,95 @@
+// Platform
+
+@font-face {
+    font-family: 'Platform';
+    src: url('font_Platform-Regular.woff2') format('woff2'),
+         url('font_Platform-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Platform';
+    src: url('font_Platform-Medium.woff2') format('woff2'),
+         url('font_Platform-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+// GT Super
+
+@font-face {
+    font-family: 'GT Super Display';
+    src: url('font_GT-Super-Display-Light.woff2') format('woff2'),
+         url('font_GT-Super-Display-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Super Display';
+    src: url('font_GT-Super-Display-Light-Italic.woff2') format('woff2'),
+         url('font_GT-Super-Display-Light-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'GT Super Display';
+    src: url('font_GT-Super-Display-Medium.woff2') format('woff2'),
+         url('font_GT-Super-Display-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'GT Super Display';
+    src: url('font_GT-Super-Display-Medium-Italic.woff2') format('woff2'),
+         url('font_GT-Super-Display-Medium-Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'GT Super Text';
+    src: url('font_GT-Super-Text-Book.woff2') format('woff2'),
+         url('font_GT-Super-Text-Book.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Super Text';
+    src: url('font_GT-Super-Text-Book-Italic.woff2') format('woff2'),
+         url('font_GT-Super-Text-Book-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+:root{
+
+    // --font-body-family: 'Platform';
+    // --font-body-style: normal;
+    // --font-body-weight: 400;
+    // --font-body-weight-bold: 500;
+
+    // --font-heading-family: 'GT Super';
+    // --font-heading-style: normal;
+    // --font-heading-weight: 300;
+
+
+}

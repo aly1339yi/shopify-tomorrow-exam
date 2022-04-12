@@ -1,0 +1,18 @@
+.product-card{
+    cursor: pointer;
+}
+
+.product-card__info{
+    padding: 3rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.product-card__title{
+    text-transform: capitalize;
+    font-style: italic;
+    letter-spacing: 0.01em;
+    font-size: 2.4rem;
+}

@@ -1,0 +1,81 @@
+<div class="featured-collection">
+
+    {%- if section.settings.title != blank -%}
+
+    <h2 class="featured-collection__title title">{{ section.settings.title }}</h2>
+
+    {%- endif -%}
+
+    <div class="featured-collection-inner">
+
+        <div class="featured-collection__carousel swiper">
+    
+            <ul class="featured-collection__list featured-collection-{{section.id}} swiper-wrapper" id="featured-collection-{{section.id}}">
+        
+                {%- for product in section.settings.collection.products -%}
+        
+                <li class="featured-collection__item featured-collection__item-{{section.id}}-{{ forloop.index0 }} swiper-slide" id="featured-collection__item-{{section.id}}-{{ forloop.index0 }}">
+                    
+                    {% render 'card-product', card_product: product %}
+        
+                </li>
+        
+                {%- endfor -%}
+        
+            </ul>
+    
+        </div>
+    
+        <div class="featured-collection__control--next swiper-button-next">{% render 'icon-arrow-long-right' %}</div>
+        <div class="featured-collection__control--prev swiper-button-prev">{% render 'icon-arrow-long-left' %}</div>
+
+    </div>
+
+    <div class="featured-collection-footer">
+        <a href="{{ section.settings.collection.url }}" class="link link--underline">Shop All</a>
+    </div>
+
+    
+
+</div>
+
+
+
+
+
+
+{% schema %}
+
+{
+
+    "name": "Featured Collection",
+    "tag": "section",
+    "class": "section",
+    "settings":[
+
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+
+        {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection"
+        }
+
+
+    ],
+
+
+    "presets": [
+        {
+            "name": "Featured Collection"
+        }
+    ]
+
+}
+
+
+{% endschema %}

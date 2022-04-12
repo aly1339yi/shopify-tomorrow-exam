@@ -1,0 +1,19 @@
+.title{
+	font-family: 'GT Super Display';
+	font-weight: 300;
+	font-style: normal;
+}
+
+.link{
+	display: block;
+    font-family: 'Platform';
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+.link--underline{
+	text-decoration: underline;
+	text-underline-offset: 0.4rem;
+}

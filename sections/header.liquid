@@ -1,0 +1,98 @@
+<div class="header">
+
+    <!-- Header Logo -->
+
+    <div class="header__logo">
+
+        <div class="header__logo-icon">
+            {% render 'icon-logo' %}
+        </div>
+
+        <div class="header__logo-text">
+            {{ section.settings.logo_text }}
+        </div>
+
+    </div>
+
+    <!-- Header Main Menu -->
+
+    <ul class="header__main-menu">
+
+        {%- for link in section.settings.main_menu.links -%}
+
+        <li>
+            <a href="{{ link.url }}" class="link">{{ link.title }}</a>
+        </li>
+
+        {%- endfor -%}
+
+    </ul>
+
+    <!-- Header Side Menu -->
+
+    <ul class="header__side-menu">
+        
+        <li class="header__side-menu-item--search">
+            {% render 'icon-search' %}
+            <span class="visually-hidden">Search</span>
+        </li>
+
+        <li class="header__side-menu-item--bag">
+            {% render 'icon-bag' %}
+            <span class="visually-hidden">Bag</span>
+        </li>       
+        
+        <li class="header__side-menu-item--menu">
+            <details class="header_drawer">
+                <summary class="header_drawer-toggle">
+                    {% render 'icon-hamburger' %}
+                    <span class="visually-hidden">Menu</span>
+                </summary>
+                <ul class="header__drawer-menu">
+
+                    {%- for link in section.settings.main_menu.links -%}
+            
+                    <li>
+                        <a href="{{ link.url }}" class="link">{{ link.title }}</a>
+                    </li>
+            
+                    {%- endfor -%}
+            
+                </ul>
+            </details>
+        </li>      
+
+    </ul>
+
+
+
+</div>
+
+
+
+
+{% schema %}
+
+{
+
+    "name": "Header",
+    "settings":[
+
+        {
+            "type": "textarea",
+            "id": "logo_text",
+            "label": "Logo Text"
+        },
+
+        {
+            "type": "link_list",
+            "id": "main_menu",
+            "default": "main-menu",
+            "label": "Main Menu"
+        }
+
+    ]
+}
+
+
+{% endschema %}
